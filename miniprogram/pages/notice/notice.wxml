@@ -1,0 +1,37 @@
+<!--miniprogram/pages/notice/notice.wxml-->
+<view >
+  <text class="title">公告发布</text>
+</view>
+
+<view>
+  <text>\n</text>
+</view>
+
+<view>
+<text class="td"> 历史公告 </text>
+  <view>
+
+    <textarea class="HistoryText" placeholder="历史内容"  value="{{logs}}" style="margin:0 auto;"> </textarea>
+  </view>
+  <view>
+    <text>\n</text>
+    <text class="td"> 当前公告 </text>
+  </view>
+  <div style="text-align:center;">
+
+
+    <textarea 
+    class="NoticeText" 
+    placeholder="输入您的公告内容" 
+    bindinput="bindtextinput" 
+    style="margin:0 auto;"
+    value="{{details}}"
+    />
+
+  </div>
+<view>
+  <text>\n</text>
+  
+</view>
+  <button type="default" bindtap='sub'> 提交 </button>
+</view>

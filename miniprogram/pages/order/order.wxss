@@ -1,0 +1,69 @@
+@import "../../style/guide.wxss";
+
+.content{
+  display: block;
+}
+.content-list {
+display:flex;
+border-bottom:1px solid #E3E3E3;
+}
+.item-sub {
+  height: 20px;
+  width:20px;
+  margin-left: 150rpx;
+  margin-right:10rpx;
+}
+.item-add {
+  height: 20px;
+  width:20px;
+  margin-left:10rpx;
+}
+.list-image-box{
+  width:160rpx;
+  height:72px;
+  text-align: center;
+}
+.list-image{
+  width:108rpx;
+  margin-top:16rpx;
+}
+.issue-name{
+  width:200px;
+  font-size:30rpx;
+  margin-top:20rpx;
+}
+.row {
+  width:100%;
+  display: flex;
+  height: 45px;
+  flex-direction: row;
+  border:1px solid #E3E3E3;
+  margin: 0;
+}
+.sum {
+  margin-left: 50px;
+  height: 45px;
+  line-height: 45px;
+}
+.price {
+  color: red;
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+}
+.button-red {
+  margin-left: 150px;
+  background-color: #f44336; /* 红色 */
+}
+button {
+  position: fixed;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 30%;
+  height: 45px;
+  line-height: 45px;
+}

@@ -1,0 +1,28 @@
+/* miniprogram/pages/notice/notice.wxss */
+
+.title {
+  color: rgb(60, 238, 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* border-style:dotted solid double dashed;  */
+.NoticeText{
+  height: 140px;
+  border: 2px  solid black;
+  margin-top:300px;
+  display: block
+  
+}
+.HistoryText{
+  border: 2px  dotted black;
+  display: block
+}

@@ -1,0 +1,27 @@
+<view class="container">
+  <scroll-view scroll-y="true" style="height: 1000rpx">
+    <view class="content" wx:for="{{listData}}"  wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+      <view class="content-list" >
+        <view class='list-image-box' wx:key="unique" >
+          <image class="list-image" mode="widthFix" src='{{items.image_url}}'></image>
+        </view>
+        <view class='issue-name'>
+          <view>{{items.name}}</view>
+          <view style='margin-top:20rpx;color:#F05A86'>
+            $ {{items.price}}.00
+            <image class='item-sub' src="	../../images/sub.PNG" data-type="{{index}}" data-index="{{indexs}}" bindtap="subItem"></image>
+            {{item_number[indexs]}}
+            <image class='item-add' src="	../../images/add.PNG" data-type="{{index}}" data-index="{{indexs}}" bindtap="addItem"></image>
+          </view>
+    </view>
+    </view>
+    </view>
+</scroll-view>
+<!-- 底部操作菜单 -->
+<view class="row">
+    <text class="sum">合计:￥ </text>
+    <text class="price">{{totalMoney}}</text>
+    <button class="button-red" bindtap="toBuy" formType="submit">去结算</button>
+  </view>
+
+</view>

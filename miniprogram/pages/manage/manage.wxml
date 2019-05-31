@@ -1,0 +1,12 @@
+<!--pages/manage/manage.wxml-->
+<view class='order-info'>
+    <view class='order-info-title'>订单管理</view>
+    <view class='cart-list-box' wx:for="{{idList}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+      <view class='list-info' wx:key="unique">
+        <view bindtap='checkList' wx:key="unique">订单编号：{{items.orderId}}</view>
+      </view>
+      <view>
+        <view class='start-btn' bindtap='finish' data-type="{{index}}" data-index="{{indexs}}">完成订单</view>
+      </view>
+    </view>
+  </view>
